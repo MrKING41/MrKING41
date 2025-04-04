@@ -1,4 +1,4 @@
-# 🌌 Welcome to [Your Name]'s Galactic Code Hub! 🌌
+# 🌌 Welcome to KING's Galactic Code Hub! 🌌
 
 <p align="center">
   <img src="https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif" alt="Space Animation" width="500"/>
