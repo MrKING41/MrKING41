@@ -1,79 +1,88 @@
-# 🌌 Welcome to KING's Galactic Code Hub! 🌌
-
+<!-- KING Anime Logo -->
 <p align="center">
-  <img src="https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif" alt="Space Animation" width="500"/>
+  <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FF00FF">
+          <animate attributeName="stop-color" values="#FF00FF;#00FFFF;#FF00FF" dur="4s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%" stop-color="#00FFFF">
+          <animate attributeName="stop-color" values="#00FFFF;#FF00FF;#00FFFF" dur="4s" repeatCount="indefinite" />
+        </stop>
+      </linearGradient>
+    </defs>
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" 
+          font-family="Arial Black, sans-serif" font-size="60" 
+          fill="url(#gradient)" stroke="#FFFFFF" stroke-width="2">
+      👑 KING 👑
+    </text>
+  </svg>
 </p>
 
 ---
 
-### 👾 Greetings, Fellow Code Traveler! 
-I’m [Your Name], a code wizard, emoji addict, and cosmic creator! 🌠  
-Ready to blast off into the world of tech? Let’s roll! 🚀
-
----
-
-## 📈 Profile Stats
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=yourusername.yourusername&left_color=purple&right_color=blue&left_text=Visitors)  
-*500+ brave souls have ventured here!* 🌍  
-
-![GitHub Stars](https://img.shields.io/github/stars/yourusername?style=social) ⭐  
-![GitHub Followers](https://img.shields.io/github/followers/yourusername?style=social) 👥  
-
----
-
-## 🦸‍♂️ My Superpowers {Skills}
-- **{Languages}**: [Python 🐍] [JavaScript ⚡] [C++ 💻]  
-- **{Tools}**: [Git 🔧] [Docker 🐳] [VS Code ✍️]  
-- **{Frameworks}**: [React ⚛️] [Django 🌐] [Flutter 🦋]  
-- **{Soft Skills}**: [Problem Solving 🧠] [Teamwork 🤝] [Coffee Mastery ☕]  
-
----
-
-## 🌱 Currently Learning
-- Machine Learning 🤖  
-- Cloud Computing ☁️  
-- How to survive without Wi-Fi (impossible!) 📡  
-
----
-
-## 🏆 My GitHub Trophies
+<!-- Animated Typing Intro -->
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=radical&no-frame=true&margin-w=15" alt="GitHub Trophies"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=FF00FF&center=true&vCenter=true&width=850&lines=👑+WELCOME+TO+KING's+ANIME+REALM+👑;Anime+Fan+⚡;Dreaming+to+be+a+Legendary+Coder;Learning+and+Growing+🚀" alt="Typing SVG" />
 </p>
 
 ---
 
-## 🎨 Fun Facts About Me
-- I dream in code 💭  
-- Cats are my co-developers 🐾  
-- I’ve never lost a staring contest with my IDE 👁️‍🗨️  
+### 🌸 About Me
+- 🌌 Anime lover, creating my own journey in coding.  
+- 🚀 Currently learning **Web Dev | Python | AI**.  
+- 🔥 Goal: Blend **Anime creativity** with **Technology power**.  
 
 ---
 
-## 💬 Cosmic Quote of the Day
-> "The best error message is the one that never shows up." – Some Wise Dev  
-
----
-
-## 🌟 Stellar Projects
-- **[Project 1 Name](link)**: A masterpiece of code! 🎨  
-- **[Project 2 Name](link)**: Out-of-this-world awesomeness! 🌙  
-
----
-
-## 📡 Contact My Spaceship
-- [Twitter/X](https://twitter.com/yourusername) 🐦  
-- [LinkedIn](https://linkedin.com/in/yourusername) 💼  
-- [Email](mailto:your.email@example.com) ✉️  
-
----
-
-## 🎬 Animation Station
+### ⚡ GitHub Stats
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7TKz9uMtblkW3h4k/giphy.gif" alt="Coding Rocket" width="300"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=ME-KING&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=FF00FF&icon_color=FF00FF" height="165"/>
+  <img src="https://streak-stats.demolab.com?user=ME-KING&theme=tokyonight-duo&hide_border=true&background=0D1117&ring=FF00FF&fire=FF0080" height="165"/>
 </p>
 
 ---
 
-*Thanks for orbiting my profile! Drop a star on my repos to fuel my journey! 🌟*  
-Last Updated: April 04, 2025
+### 🌠 Contribution Graph
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ME-KING&bg_color=0D1117&color=FF00FF&line=FF0080&point=FFFFFF&area=true&hide_border=true" width="95%"/>
+</p>
+
+---
+
+### 🔮 Anime World Inside
+<p align="center">
+  <img src="https://media.tenor.com/Lo2bPlrH4dMAAAAC/gojo-satoru.gif" width="400"/>
+  <img src="https://media.tenor.com/VrYjGrTrOdwAAAAC/itachi-naruto.gif" width="400"/>
+</p>
+
+<p align="center">
+  <img src="https://media.tenor.com/2roX3uxz_68AAAAC/anime-scenery.gif" width="600"/>
+</p>
+
+<p align="center">
+  <img src="https://media.tenor.com/l5iEDqjS1mAAAAAC/zenitsu-demon-slayer.gif" width="300"/>
+  <img src="https://media.tenor.com/RZC3Jk9gP3EAAAAC/attack-on-titan-eren.gif" width="300"/>
+  <img src="https://media.tenor.com/ZV8v4qMZT9sAAAAC/luffy-gear5-onepiece.gif" width="300"/>
+</p>
+
+---
+
+### 🛠️ Tech Arsenal
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,html,css,js,react,nodejs,git,github,vscode" />
+</p>
+
+---
+
+### ✨ Visitors
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ME-KING&label=PROFILE+VIEWS&color=ff69b4&style=for-the-badge" />
+</p>
+
+---
+
+### 🎶 Ending Vibes
+<p align="center">
+  <img src="https://media.tenor.com/DFH80LIT2n4AAAAC/naruto-sasuke.gif" width="500"/>
+</p>
