@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560">
+  <defs>
+    <!-- Static galaxy background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#03021a"/>
+      <stop offset="50%" stop-color="#1b0233"/>
+      <stop offset="100%" stop-color="#001233"/>
+    </linearGradient>
+
+    <!-- Gold gradient for the gauntlet -->
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD54A"/>
+      <stop offset="50%" stop-color="#D8A400"/>
+      <stop offset="100%" stop-color="#FFE27A"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bigGlow" x="-200%" y="-200%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Star texture (static) -->
+    <pattern id="stars" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="transparent"/>
+      <circle cx="8" cy="12" r="0.8" fill="#9ee8ff" opacity="0.9"/>
+      <circle cx="24" cy="40" r="0.7" fill="#ffd2ff" opacity="0.9"/>
+      <circle cx="56" cy="16" r="1.1" fill="#b0f0ff" opacity="0.9"/>
+      <circle cx="80" cy="30" r="0.6" fill="#ffe18a" opacity="0.9"/>
+    </pattern>
+
+    <!-- Dust particle symbol -->
+    <symbol id="dust"><circle r="2.2" fill="#f6e7b9" opacity="0.95"/></symbol>
+
+    <!-- Stone colors as gradients -->
+    <radialGradient id="g-space"><stop offset="0%" stop-color="#bff3ff"/><stop offset="100%" stop-color="#00bfff"/></radialGradient>
+    <radialGradient id="g-reality"><stop offset="0%" stop-color="#ffd9e6"/><stop offset="100%" stop-color="#ff004c"/></radialGradient>
+    <radialGradient id="g-power"><stop offset="0%" stop-color="#f2e6ff"/><stop offset="100%" stop-color="#a100ff"/></radialGradient>
+    <radialGradient id="g-mind"><stop offset="0%" stop-color="#fff9d8"/><stop offset="100%" stop-color="#ffd700"/></radialGradient>
+    <radialGradient id="g-time"><stop offset="0%" stop-color="#e6ffe6"/><stop offset="100%" stop-color="#15ff00"/></radialGradient>
+    <radialGradient id="g-soul"><stop offset="0%" stop-color="#fff0db"/><stop offset="100%" stop-color="#ff8a00"/></radialGradient>
+
+    <!-- Cosmic text style -->
+    <filter id="textGlow"><feGaussianBlur stdDeviation="3" result="t"/><feMerge><feMergeNode in="t"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#stars)" opacity="0.7"/>
+
+  <!-- Subtle nebula blob (static) -->
+  <g opacity="0.18">
+    <ellipse cx="240" cy="140" rx="260" ry="100" fill="#6d1b76"/>
+    <ellipse cx="720" cy="220" rx="320" ry="140" fill="#0b4a6f" opacity="0.8"/>
+  </g>
+
+  <!-- Title top -->
+  <g font-family="Montserrat, Arial Black, sans-serif" font-size="34" text-anchor="middle" filter="url(#glow)">
+    <text x="50%" y="46" fill="#ffd600" opacity="0.85">👑 K I N G — COSMIC SNAP</text>
+  </g>
+
+  <!-- Gauntlet group placed right-lower -->
+  <g id="gauntlet" transform="translate(540,160) scale(1.05)">
+    <!-- Palm -->
+    <path d="M40,220 C10,200 0,160 20,130 L70,70 C90,45 125,35 160,45 C195,55 220,80 235,110 
+             L250,150 C265,185 260,215 240,235 C220,255 185,260 150,255 L95,245 C70,242 55,235 40,220 Z"
+          fill="url(#gold)" stroke="#8a6b00" stroke-width="3" filter="url(#glow)"/>
+
+    <!-- Thumb -->
+    <path d="M95,150 C110,135 125,125 150,125 C170,125 185,135 195,145 C205,155 207,170 200,180
+             C193,190 175,195 150,195 C130,195 115,190 100,180 C90,172 86,162 95,150 Z"
+          fill="url(#gold)" stroke="#8a6b00" stroke-width="3"/>
+
+    <!-- Index finger group (animated snap rotation) -->
+    <g id="index" transform="translate(180,82)">
+      <rect x="-10" y="0" rx="5" ry="5" width="20" height="60" fill="url(#gold)" stroke="#8a6b00" stroke-width="3"/>
+      <g id="index-tip" transform="translate(0,0)">
+        <rect x="-9" y="-50" rx="5" ry="5" width="18" height="50" fill="url(#gold)" stroke="#8a6b00" stroke-width="3">
+          <!-- quick snap: rotate -55deg then back, with fast timing -->
+          <animateTransform attributeName="transform" attributeType="XML" type="rotate"
+            values="0 0 0; -60 0 0; 0 0 0" keyTimes="0;0.12;1" dur="4.8s" repeatCount="indefinite" begin="0.9s"/>
+        </rect>
+      </g>
+    </g>
+
+    <!-- Other fingers -->
+    <g transform="translate(205,90)"><rect x="-10" y="0" rx="5" ry="5" width="20" height="85" fill="url(#gold)" stroke="#8a6b00" stroke-width="3"/><rect x="-9" y="-45" rx="5" ry="5" width="18" height="45" fill="url(#gold)" stroke="#8a6b00" stroke-width="3"/></g>
+    <g transform="translate(230,100)"><rect x="-9" y="0" rx="5" ry="5" width="18" height="75" fill="url(#gold)" stroke="#8a6b00" stroke-width="3"/><rect x="-8" y="-35" rx="5" ry="5" width="16" height="35" fill="url(#gold)" stroke="#8a6b00" stroke-width="3"/></g>
+    <g transform="translate(252,112)"><rect x="-8" y="0" rx="5" ry="5" width="16" height="58" fill="url(#gold)" stroke="#8a6b00" stroke-width="3"/><rect x="-7" y="-28" rx="5" ry="5" width="14" height="28" fill="url(#gold)" stroke="#8a6b00" stroke-width="3"/></g>
+
+    <!-- Stones -->
+    <g id="stones" filter="url(#glow)">
+      <circle cx="140" cy="120" r="11" fill="url(#g-mind)"><animate attributeName="r" values="11;13;11" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="120" cy="95" r="9" fill="url(#g-space)"><animate attributeName="r" values="9;11;9" dur="1.3s" repeatCount="indefinite"/></circle>
+      <circle cx="162" cy="95" r="9" fill="url(#g-reality)"><animate attributeName="r" values="9;11;9" dur="1.3s" repeatCount="indefinite"/></circle>
+      <circle cx="182" cy="120" r="9" fill="url(#g-power)"><animate attributeName="r" values="9;11;9" dur="1.1s" repeatCount="indefinite"/></circle>
+      <circle cx="98" cy="120" r="9" fill="url(#g-time)"><animate attributeName="r" values="9;11;9" dur="1.1s" repeatCount="indefinite"/></circle>
+      <circle cx="140" cy="145" r="9" fill="url(#g-soul)"><animate attributeName="r" values="9;11;9" dur="1.2s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- Snap flash: appears quickly near index -->
+    <g id="snapFlash" transform="translate(188,95)" opacity="0" filter="url(#bigGlow)">
+      <circle r="0" fill="#fffef0">
+        <animate attributeName="r" values="0;22;120" keyTimes="0;0.18;1" dur="4.8s" begin="1.0s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;0" keyTimes="0;0.12;1" dur="4.8s" begin="1.0s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="0" fill="none" stroke="#ffd700" stroke-width="3">
+        <animate attributeName="r" values="0;90;220" keyTimes="0;0.22;1" dur="4.8s" begin="1.05s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0.9;0" dur="4.8s" begin="1.05s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Dust / disintegration particles (quick, spread out) -->
+    <g id="dustGroup" transform="translate(160,95)" opacity="0">
+      <!-- multiple particles with slightly different timings -->
+      <use href="#dust" x="0" y="0"><animate attributeName="opacity" values="0;1;0" dur="4.8s" begin="1.05s" repeatCount="indefinite"/><animate attributeName="x" values="0;60;200" dur="4.8s" begin="1.05s" repeatCount="indefinite"/><animate attributeName="y" values="0;-10;-80" dur="4.8s" begin="1.05s" repeatCount="indefinite"/></use>
+      <use href="#dust" x="10" y="6"><animate attributeName="opacity" values="0;1;0" dur="4.8s" begin="1.08s" repeatCount="indefinite"/><animate attributeName="x" values="10;80;240" dur="4.8s" begin="1.08s" repeatCount="indefinite"/><animate attributeName="y" values="6;4;-60" dur="4.8s" begin="1.08s" repeatCount="indefinite"/></use>
+      <use href="#dust" x="-8" y="-6"><animate attributeName="opacity" values="0;1;0" dur="4.8s" begin="1.12s" repeatCount="indefinite"/><animate attributeName="x" values="-8;45;180" dur="4.8s" begin="1.12s" repeatCount="indefinite"/><animate attributeName="y" values="-6;-20;-90" dur="4.8s" begin="1.12s" repeatCount="indefinite"/></use>
+      <use href="#dust" x="28" y="16"><animate attributeName="opacity" values="0;1;0" dur="4.8s" begin="1.15s" repeatCount="indefinite"/><animate attributeName="x" values="28;120;320" dur="4.8s" begin="1.15s" repeatCount="indefinite"/><animate attributeName="y" values="16;6;-50" dur="4.8s" begin="1.15s" repeatCount="indefinite"/></use>
+      <use href="#dust" x="48" y="-4"><animate attributeName="opacity" values="0;1;0" dur="4.8s" begin="1.18s" repeatCount="indefinite"/><animate attributeName="x" values="48;160;420" dur="4.8s" begin="1.18s" repeatCount="indefinite"/><animate attributeName="y" values="-4;-30;-120" dur="4.8s" begin="1.18s" repeatCount="indefinite"/></use>
+    </g>
+  </g>
+
+  <!-- QUICK cosmic KING hologram above gauntlet: appears immediately at snap then fades quickly -->
+  <g id="kingHolo" transform="translate(500,60)" text-anchor="middle" filter="url(#textGlow)" opacity="0">
+    <!-- Each letter is a separate tspan so we can color/pulse individually -->
+    <text x="0" y="0" font-family="Trebuchet MS, Fira Sans, serif" font-size="64" font-weight="700" letter-spacing="8">
+      <tspan id="K" x="0" y="0" fill="url(#g-space)" opacity="0">K</tspan>
+      <tspan id="I" x="75" y="0" fill="url(#g-reality)" opacity="0">I</tspan>
+      <tspan id="N" x="140" y="0" fill="url(#g-power)" opacity="0">N</tspan>
+      <tspan id="G" x="215" y="0" fill="url(#g-mind)" opacity="0">G</tspan>
+    </text>
+
+    <!-- shimmer/pulse behind text -->
+    <ellipse cx="110" cy="22" rx="220" ry="32" fill="#ffffff" opacity="0.02" id="holoGlow"/>
+  </g>
+
+  <!-- Timing controls: make KING appear fast and fade quickly like dust (snap-like) -->
+  <!-- Show KING at same moment as snapFlash peak (~1.0s). Appear instantly, then fade within ~0.9s -->
+  <animate xlink:href="#kingHolo" attributeName="opacity" values="0;1;0" keyTimes="0;0.08;0.5" dur="4.8s" begin="1.0s" repeatCount="indefinite"/>
+  <!-- Individual letter pulse & opacity that sync with the appearance -->
+  <animate xlink:href="#K" attributeName="opacity" values="0;1;0" begin="1.02s" dur="0.9s" repeatCount="indefinite"/>
+  <animate xlink:href="#I" attributeName="opacity" values="0;1;0" begin="1.03s" dur="0.9s" repeatCount="indefinite"/>
+  <animate xlink:href="#N" attributeName="opacity" values="0;1;0" begin="1.04s" dur="0.9s" repeatCount="indefinite"/>
+  <animate xlink:href="#G" attributeName="opacity" values="0;1;0" begin="1.05s" dur="0.9s" repeatCount="indefinite"/>
+
+  <!-- Quick scale pulse for letters -->
+  <animateTransform xlink:href="#K" attributeName="transform" attributeType="XML" type="scale" values="1;1.12;1" begin="1.02s" dur="0.9s" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#I" attributeName="transform" attributeType="XML" type="scale" values="1;1.12;1" begin="1.03s" dur="0.9s" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#N" attributeName="transform" attributeType="XML" type="scale" values="1;1.12;1" begin="1.04s" dur="0.9s" repeatCount="indefinite"/>
+  <animateTransform xlink:href="#G" attributeName="transform" attributeType="XML" type="scale" values="1;1.12;1" begin="1.05s" dur="0.9s" repeatCount="indefinite"/>
+
+  <!-- Small star particles that appear around KING quickly and fade -->
+  <g id="kingDust" opacity="0">
+    <use href="#dust" x="-60" y="20"><animate attributeName="opacity" values="0;1;0" begin="1.02s" dur="0.9s" repeatCount="indefinite"/></use>
+    <use href="#dust" x="-10" y="8"><animate attributeName="opacity" values="0;1;0" begin="1.03s" dur="0.9s" repeatCount="indefinite"/></use>
+    <use href="#dust" x="30" y="16"><animate attributeName="opacity" values="0;1;0" begin="1.04s" dur="0.9s" repeatCount="indefinite"/></use>
+    <use href="#dust" x="90" y="6"><animate attributeName="opacity" values="0;1;0" begin="1.05s" dur="0.9s" repeatCount="indefinite"/></use>
+  </g>
+  <animate xlink:href="#kingDust" attributeName="opacity" values="0;1;0" begin="1.02s" dur="0.9s" repeatCount="indefinite"/>
+
+  <!-- Footer caption -->
+  <g transform="translate(0,0)" font-family="Fira Code, monospace" font-size="14" fill="#cde7ff" opacity="0.8">
+    <text x="50%" y="540" text-anchor="middle">Quick Snap loop (4.8s) · KING hologram appears briefly · For ME-KING</text>
+  </g>
+</svg>
